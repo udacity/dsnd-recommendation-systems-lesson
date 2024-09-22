@@ -3,7 +3,7 @@ import pandas as pd
 
 def test1(sol_1_dict):
     a = 6
-    b = 99685
+    b = 68646
     c = 'The Godfather'
     d = 'Goodfellas'
     e = 3298
@@ -15,11 +15,11 @@ def test1(sol_1_dict):
     'the number of movies in the user_movie_subset': g,
     'the user_id with the highest average ratings given': e,
     'the movie_id with the highest average ratings received': b,
-    'the name of the movie that received the highest average rating': d
+    'the name of the movie that received the highest average rating': c
     }
     
     if sol_1_dict == sol_1_dict_sol:
-        print("That's right!  There are 6 users in the dataset, which is given by the number of rows. There are 3 movies in the dataset given by the number of columns.  You can find the movies or users with the highest average ratings by taking the mean of each row or column.  Using the movies table, you can find the movie names associated with each id.  This shows the top rated movie is Goodfellas!")
+        print("That's right!  There are 6 users in the dataset, which is given by the number of rows. There are 3 movies in the dataset given by the number of columns.  You can find the movies or users with the highest average ratings by taking the mean of each row or column.  Using the movies table, you can find the movie names associated with each id.")
      
     if sol_1_dict['the number of users in the user_movie_subset'] != sol_1_dict_sol['the number of users in the user_movie_subset']:
         print("That doesn't look right for the number of users.  Notice, this should be the number of rows in the subset dataframe.")
